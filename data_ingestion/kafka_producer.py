@@ -1,10 +1,10 @@
-import json 
+import json
 import time
 from kafka import KafkaProducer
 from nba_api.stats.endpoints import leaguedashplayerstats
 
-kafka_broker = 'localhost:9092'
-topic_name = 'nba_player_stats'
+KAFKA_BROKER = "localhost:9092"
+TOPIC_NAME = "nba_player_stats"
 
 def create_producer():
     """
